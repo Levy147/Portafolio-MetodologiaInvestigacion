@@ -75,6 +75,39 @@
           "nombre": "Ensayo del Bloque I",
           "url": "",
           "local": "contenido_curso/vistas/Ensayo.pdf"
+        },
+        {
+          "id": "reflexion-inicial",
+          "tipo": "recurso",
+          "nombre": "Lectura de la reflexión inicial",
+          "url": ""
+        },
+        {
+          "id": "clase-magistral-1",
+          "tipo": "recurso",
+          "nombre": "Clase magistral 1",
+          "url": ""
+        },
+        {
+          "id": "presentacion-1",
+          "tipo": "recurso",
+          "nombre": "Presentación 1",
+          "url": ""
+        },
+        {
+          "id": "laboratorio-aprendizaje",
+          "tipo": "recurso",
+          "nombre": "Laboratorio de aprendizaje",
+          "url": ""
+        },
+        {
+          "id": "trabajo-investigacion",
+          "tipo": "assign",
+          "nombre": "Trabajo de investigación",
+          "url": "",
+          "estado": "pendiente",
+          "adjuntos": [],
+          "entregas": []
         }
       ]
     }
