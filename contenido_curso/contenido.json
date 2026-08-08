@@ -21,15 +21,8 @@
     },
     {
       "numero": 1,
-      "nombre": "Conceptos Básicos de La Investigación.",
+      "nombre": "Bloque 1",
       "recursos": [
-        {
-          "id": "2659862",
-          "tipo": "url",
-          "nombre": "Conceptos Básicos de la Investigación",
-          "url": "https://aulavirtualfahusac.usac.edu.gt/mod/url/view.php?id=2659862",
-          "link_externo": "https://gamma.app/docs/Conceptos-Basicos-de-la-Investigacion-m85muih3i303of3"
-        },
         {
           "id": "2659863",
           "tipo": "url",
@@ -64,13 +57,6 @@
           "link_externo": "https://drive.google.com/file/d/18j3pVYqFmsBJFOvYEM60VxWj4L2LmngL/view?usp=sharing",
           "descargado": "SEGUNDA_LECTURA_AMAR_ES_DE_VALIENTES.pdf",
           "local": "contenido_curso/vistas/SEGUNDA_LECTURA_AMAR_ES_DE_VALIENTES.pdf"
-        },
-        {
-          "id": "2667499",
-          "tipo": "url",
-          "nombre": "Segunda Clase",
-          "url": "https://aulavirtualfahusac.usac.edu.gt/mod/url/view.php?id=2667499",
-          "link_externo": "https://gamma.app/docs/Metodos-Logico-Formales-Como-Piensan-los-Cientificos-4hyiggy11x805de"
         },
         {
           "id": "2668990",
