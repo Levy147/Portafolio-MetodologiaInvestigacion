@@ -68,6 +68,13 @@
           "estado": "pendiente",
           "adjuntos": [],
           "entregas": []
+        },
+        {
+          "id": "ensayo-bloque-1",
+          "tipo": "recurso",
+          "nombre": "Ensayo del Bloque I",
+          "url": "",
+          "local": "contenido_curso/vistas/Ensayo.pdf"
         }
       ]
     }
