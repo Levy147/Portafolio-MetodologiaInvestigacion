@@ -73,9 +73,6 @@ async function loadCurso() {
     if (!res.ok) throw new Error(res.status);
     const data = await res.json();
 
-    $("#statSecciones").textContent = data.secciones.length;
-    const total = data.secciones.reduce((n, s) => n + s.recursos.length, 0);
-    $("#statRecursos").textContent = total;
     $("#cursoMeta").textContent = `Curso: ${data.curso}.`;
 
     grid.innerHTML = data.secciones.map((sec) => {
