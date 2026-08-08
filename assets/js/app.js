@@ -99,14 +99,14 @@ async function loadCurso() {
     $("#statSecciones").textContent = data.secciones.length;
     const total = data.secciones.reduce((n, s) => n + s.recursos.length, 0);
     $("#statRecursos").textContent = total;
-    $("#cursoMeta").textContent = `Curso: ${data.curso} · Actualizado el ${new Date(data.fecha).toLocaleDateString("es-GT", { day: "numeric", month: "long", year: "numeric" })}.`;
+    $("#cursoMeta").textContent = `Curso: ${data.curso}.`;
 
     grid.innerHTML = data.secciones.map((sec) => {
       const items = sec.recursos
         .map((r) => {
           const tipo = r.tipo === "url" ? "url" : r.tipo === "assign" ? "assign" : "recurso";
           const ext = tipo === "url" ? "Enlace" : tipo === "assign" ? "Tarea" : "Recurso";
-          const sub = r.fechas ? r.fechas : tipo === "url" && r.link_externo ? r.link_externo.split("/")[2]?.replace("www.", "") || "Enlace externo" : "";
+          const sub = tipo === "url" && r.link_externo ? r.link_externo.split("/")[2]?.replace("www.", "") || "Enlace externo" : "";
           const url = r.link_externo || r.url || "#";
           const estadoBadge =
             tipo === "assign" && r.estado
