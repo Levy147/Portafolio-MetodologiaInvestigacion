@@ -1,0 +1,14 @@
+# SECRETOS: nunca subir a GitHub
+.env
+.env.local
+
+# Descargas temporales del scraper
+contenido_curso/*.html
+scripts/cookies.txt
+
+# macOS / OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

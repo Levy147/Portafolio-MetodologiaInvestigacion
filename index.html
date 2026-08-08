@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Herbert Galeano · Portafolio Digital — Metodología de la Investigación</title>
+  <meta name="description" content="Portafolio digital de la Licenciatura en Pedagogía y Administración Educativa — Métodos de Investigación. FAHUSAC, USAC." />
+  <meta property="og:title" content="Herbert Galeano · Portafolio Digital" />
+  <meta property="og:description" content="Licenciatura en Pedagogía y Administración Educativa · Métodos de Investigación" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EHG%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav glass" id="nav">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">HG</span>
+      <span class="brand-name">Herbert Galeano</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#curso">Curso</a>
+      <a href="#documentos">Documentos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a class="btn btn-sm btn-primary" href="#documentos">Ver materiales</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero-inner container">
+        <span class="chip glass reveal">
+          <span class="chip-dot"></span>
+          Licenciatura en Pedagogía y Administración Educativa
+        </span>
+        <h1 class="reveal">Portafolio <span class="grad-text">Digital</span></h1>
+        <p class="hero-sub reveal">
+          Herbert Galeano · Estudios de la investigación<br />
+          Recopilación, análisis y evidencias del curso
+          <strong>“Métodos de Investigación”</strong> — FAHUSAC · USAC.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#curso">Explorar el curso</a>
+          <a class="btn btn-ghost" href="#documentos">Mis documentos</a>
+        </div>
+
+        <div class="hero-stats glass reveal" id="heroStats">
+          <div class="stat">
+            <span class="stat-num grad-text" id="statSecciones">—</span>
+            <span class="stat-label">Secciones</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num grad-text" id="statRecursos">—</span>
+            <span class="stat-label">Recursos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num grad-text" id="statArchivos">—</span>
+            <span class="stat-label">Documentos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CURSO ================= -->
+    <section class="section" id="curso">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">Aula Virtual · FAHUSAC</span>
+          <h2>Métodos de Investigación</h2>
+          <p class="section-desc">
+            Contenido del curso extraído directamente de la plataforma
+            <strong>aulavirtualfahusac.usac.edu.gt</strong>.
+            <span id="cursoMeta"></span>
+          </p>
+        </header>
+
+        <div class="course-grid" id="cursoGrid"><!-- render por JS --></div>
+
+        <div class="course-note glass reveal">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16v-6m0 0V8m0 2h.01M4 20h16L12 4 4 20z"/></svg>
+          <p>Los documentos se ven en línea desde esta página. Las dos presentaciones de <strong>Gamma</strong> se abren en su plataforma original.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DOCUMENTOS ================= -->
+    <section class="section section-alt" id="documentos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">Mi biblioteca</span>
+          <h2>Documentos</h2>
+          <p class="section-desc">
+            Archivos subidos desde la carpeta <code>archivos/</code> del repositorio.
+            Se actualizan solos tras cada <strong>deploy</strong> en GitHub Pages.
+          </p>
+        </header>
+
+        <div class="docs-toolbar reveal">
+          <span class="docs-status" id="docsStatus"><span class="pulse"></span> Cargando…</span>
+        </div>
+
+        <div class="docs-grid" id="docsGrid"><!-- render por JS --></div>
+      </div>
+    </section>
+
+    <!-- ================= CÓMO FUNCIONA ================= -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">Workflow</span>
+          <h2>¿Cómo se actualiza este portafolio?</h2>
+          <p class="section-desc">Un flujo simple, 100% estático y sin servidores.</p>
+        </header>
+
+        <div class="steps">
+          <div class="step glass reveal">
+            <span class="step-num">01</span>
+            <h3>Subo mis archivos</h3>
+            <p>Coloco mis documentos nuevos en la carpeta <code>archivos/</code> y hago push a GitHub.</p>
+          </div>
+          <div class="step glass reveal">
+            <span class="step-num">02</span>
+            <h3>GitHub Pages despliega</h3>
+            <p>El sitio se regenera automáticamente con GitHub Pages.</p>
+          </div>
+          <div class="step glass reveal">
+            <span class="step-num">03</span>
+            <h3>El sitio lee la carpeta</h3>
+            <p>La web consulta la carpeta <code>archivos/</code> vía la API de GitHub y lista los documentos al instante.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Herbert Galeano <span class="grad-text">·</span> Portafolio Digital</p>
+        <p class="footer-note">Licenciatura en Pedagogía y Administración Educativa · FAHUSAC · USAC</p>
+      </div>
+      <p class="footer-tag">Hecho con <span class="heart">♥</span> · <a href="#inicio">Volver arriba</a></p>
+    </div>
+  </footer>
+
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <div class="viewer-backdrop" id="viewerBackdrop"></div>
+    <div class="viewer-panel glass">
+      <div class="viewer-head">
+        <h3 id="viewerTitle">Documento</h3>
+        <button class="btn btn-sm btn-ghost" id="viewerClose" type="button">Cerrar</button>
+      </div>
+      <iframe id="viewerFrame" title="Visor de documentos" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
