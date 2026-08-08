@@ -29,9 +29,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="#inicio">Inicio</a>
       <a href="#curso">Curso</a>
-      <a href="#documentos">Documentos</a>
-      <a href="#como-funciona">Cómo funciona</a>
-      <a class="btn btn-sm btn-primary" href="#documentos">Ver materiales</a>
+      <a class="btn btn-sm btn-primary" href="#curso">Ver el curso</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -54,7 +52,6 @@
         </p>
         <div class="hero-actions reveal">
           <a class="btn btn-primary" href="#curso">Explorar el curso</a>
-          <a class="btn btn-ghost" href="#documentos">Mis documentos</a>
         </div>
 
         <div class="hero-stats glass reveal" id="heroStats">
@@ -65,10 +62,6 @@
           <div class="stat">
             <span class="stat-num grad-text" id="statRecursos">—</span>
             <span class="stat-label">Recursos</span>
-          </div>
-          <div class="stat">
-            <span class="stat-num grad-text" id="statArchivos">—</span>
-            <span class="stat-label">Documentos</span>
           </div>
         </div>
       </div>
@@ -89,55 +82,6 @@
 
         <div class="course-grid" id="cursoGrid"><!-- render por JS --></div>
 
-      </div>
-    </section>
-
-    <!-- ================= DOCUMENTOS ================= -->
-    <section class="section section-alt" id="documentos">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-kicker">Mi biblioteca</span>
-          <h2>Documentos</h2>
-          <p class="section-desc">
-            Archivos subidos desde la carpeta <code>archivos/</code> del repositorio.
-            Se actualizan solos tras cada <strong>deploy</strong> en GitHub Pages.
-          </p>
-        </header>
-
-        <div class="docs-toolbar reveal">
-          <span class="docs-status" id="docsStatus"><span class="pulse"></span> Cargando…</span>
-        </div>
-
-        <div class="docs-grid" id="docsGrid"><!-- render por JS --></div>
-      </div>
-    </section>
-
-    <!-- ================= CÓMO FUNCIONA ================= -->
-    <section class="section" id="como-funciona">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="section-kicker">Workflow</span>
-          <h2>¿Cómo se actualiza este portafolio?</h2>
-          <p class="section-desc">Un flujo simple, 100% estático y sin servidores.</p>
-        </header>
-
-        <div class="steps">
-          <div class="step glass reveal">
-            <span class="step-num">01</span>
-            <h3>Subo mis archivos</h3>
-            <p>Coloco mis documentos nuevos en la carpeta <code>archivos/</code> y hago push a GitHub.</p>
-          </div>
-          <div class="step glass reveal">
-            <span class="step-num">02</span>
-            <h3>GitHub Pages despliega</h3>
-            <p>El sitio se regenera automáticamente con GitHub Pages.</p>
-          </div>
-          <div class="step glass reveal">
-            <span class="step-num">03</span>
-            <h3>El sitio lee la carpeta</h3>
-            <p>La web consulta la carpeta <code>archivos/</code> vía la API de GitHub y lista los documentos al instante.</p>
-          </div>
-        </div>
       </div>
     </section>
   </main>
